@@ -22,7 +22,7 @@ const Donation = () => {
 
     return (
         <div>
-        
+
             {
                 noFound ? <p>{noFound}</p> : <div>
 
@@ -36,7 +36,7 @@ const Donation = () => {
 
                     <div className='text-center mt-4'>
                         {
-                            donatedItems.length > 4 && 
+                            donatedItems.length > 4 && !isShow &&
 
                             <button onClick={() => setIsShow(!isShow)} className='px-3 py-1 rounded bg-[#009444] text-white'>
                                 {isShow ? "See Less" : "See All"}

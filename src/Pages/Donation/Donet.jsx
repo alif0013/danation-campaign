@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Donet = ({ donet }) => {
     const { id, Picture, Title, Category_bg, Category, Card_bg, Text_button_bg, Price } = donet || {}
+
+    
+
 
     const titleStyle = {
         backgroundColor: Category_bg,
@@ -34,6 +38,7 @@ const Donet = ({ donet }) => {
                         <Link to={`/donations/${id}`}>
                             <button className='px-2 py-1 text-white rounded' style={btnBgStyle}>View Details</button>
                         </Link>
+                  
                     </div>
                 </div>
             </div>

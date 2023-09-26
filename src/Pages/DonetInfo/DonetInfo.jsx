@@ -9,10 +9,10 @@ const DonetInfo = () => {
     const { id } = useParams();
 
     const donations = useLoaderData();
-    console.log(donations);
+    
 
    useEffect(()=>{
-    const findDonations = donations.find(donation =>donation.id === id)
+    const findDonations = donations.find(donation => donation.id === id)
     
     setDonation(findDonations);
 
