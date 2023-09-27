@@ -9,7 +9,9 @@ const MainLAyOuts = () => {
     return (
         <div className="max-w-[1280px]  mx-auto">
 
-            <Navbar></Navbar>
+            <div className='text-center py-2'>
+                <Navbar></Navbar>
+            </div>
             <Outlet></Outlet>
 
         </div>

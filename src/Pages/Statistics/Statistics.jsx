@@ -16,7 +16,7 @@ const Statistics = () => {
     ];
 
     // Define COLORS array for the Pie Chart
-    const COLORS = ["#00C49F", "#FF444A"]; // Add more colors if needed
+    const COLORS = ["#00C49F", "#FF444A"]; 
 
     return (
         <div>
