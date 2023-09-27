@@ -14,7 +14,7 @@ const Donation = () => {
             setDonatedItems(donatedItems);
         }
         else {
-            setNoFound('no data found');
+            setNoFound('Opps! no data found');
         }
     }, [])
 
@@ -24,7 +24,7 @@ const Donation = () => {
         <div>
 
             {
-                noFound ? <p>{noFound}</p> : <div>
+                noFound ? <p className='text-center text-xl py-20'>{noFound}</p> : <div>
 
                     <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5'>
                         {

@@ -8,9 +8,10 @@ const Home = () => {
     
     const donations = useLoaderData()
 
+    
     return (
         <div>
-            <Banner></Banner>
+            <Banner donations={donations}></Banner>
             <Donations donations={donations}></Donations>
         </div>
     );
